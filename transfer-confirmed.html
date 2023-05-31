@@ -1,0 +1,238 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TRANSACTION OF FUNDS CONFIRMED</title>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="style.css">
+<style type="text/css">
+
+
+body {
+		background-image: url(R.png);
+	}
+
+
+.box {
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: -13px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  text-align: center;
+  margin-top: 0;
+  color: green;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+
+.popup h3 {
+  text-align: center;
+  margin-top: 0;
+  color: green;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+
+.popup h4 {
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+
+.popup balance-statu{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 7px;
+}
+	
+.popup .close {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+} 
+	
+	
+    .payment
+	{
+		border:1px solid #f01b1b;
+		height:280px;
+        border-radius:20px;
+        background:#fff;
+	}
+   .payment_header
+   {
+	   background:#28a745;
+	   padding:20px;
+       border-radius:20px 20px 0px 0px;
+	   
+   }
+   
+   .check
+   {
+	   margin:0px auto;
+	   width:50px;
+	   height:50px;
+	   border-radius:100%;
+	   background:#fff;
+	   text-align:center;
+   }
+   
+   .check i
+   {
+	   vertical-align:middle;
+	   line-height:50px;
+	   font-size:30px;
+   }
+
+    .content 
+    {
+        text-align:center;
+    }
+
+    .content  h1
+    {
+        font-size:25px;
+        padding-top:25px;
+    }
+
+    .content a
+    {
+        width:-3px;
+        height:64px;
+        color:#fff;
+        border-radius:30px;
+        padding:1px -8px;
+        background:#28a745;
+        transition:all ease-in-out 0.3s;
+    }
+
+    .content a:hover
+    {
+        text-decoration:none;
+        background:#000;
+    }
+   
+</style>
+
+
+</head>
+
+<body>
+
+<div class="container">
+   <div class="row">
+      <div class="col-md-6 mx-auto mt-5">
+         <div class="payment">
+            <div class="payment_header">
+               <div class="check"><i class="fa fa-check" aria-hidden="true"></i></div>
+            </div>
+            <div class="content">
+               <h1>Your card is activated, funds are being transferred to your credit card.</h1>
+               
+		    
+		    <div class="box">
+	<a class="button" href="#popup1">TRANSFER FUNDS INSTANTLY</a>
+	<a class="button" href="track.html">TRACK MY ORDER</a>
+</div>
+
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>SUCCESS</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			  <p>You are trying to recover money via the SOSHOP online bank.</p>
+			<h3>SENDING MONEY COMPLETED</h3>
+			<div class="container">
+                    <div class="progressbar-wrapper">
+                        <div title="downloading" class="progressbar mp4"> 100% </div>
+			    <div>
+			    <i class="fa fa-check" style="font-size:48px;color:green"></i>
+                <div class="balance statu">
+                     <h4> <span id="current-balance">SYSTEM ENABLED </span></h4>
+	      </div>
+				    </div>
+                    </div>
+                </div>
+            </div>
+   <li> <p>We wish you again CONGRATULATIONS</p>
+     <p>Soon you will receive your money and enjoy it as much as you want we thank you for your patience and loyalty, you are one of our loyal customers.</p>
+   </li>
+	</div>
+		    </div>
+		 </div>
+	   </div>
+      </div>
+   </div>
+</div>
+	
+</body>
+</html>
